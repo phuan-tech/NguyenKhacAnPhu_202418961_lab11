@@ -1,3 +1,4 @@
+// Nguyễn Khắc An Phú 202418961
 import java.util.List;
 import java.util.ArrayList;
 import java.time.LocalDateTime;
@@ -5,6 +6,7 @@ import java.time.LocalDateTime;
 public final class SensorMonitor {
     private final List<AlertObserver> observers = new ArrayList<>();
 
+    // Thêm observer
     public void attach(AlertObserver observer) {
         if (observer == null) {
             throw new IllegalArgumentException("Observer không được null");
@@ -15,6 +17,7 @@ public final class SensorMonitor {
         }
     }
 
+    // Xóa observer
     public void detach(AlertObserver observer) {
         observers.remove(observer);
     }
@@ -37,6 +40,7 @@ public final class SensorMonitor {
         notify(alertEvent);
     }
 
+    // Thông báo
     private void notify(AlertEvent alertEvent) {
         List<AlertObserver> copyObservers = new ArrayList<>(observers);
         for (AlertObserver observer : copyObservers) {

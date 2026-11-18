@@ -1,3 +1,4 @@
+// Nguyễn Khắc An Phú 202418961
 public class EmergencyBridgeObserver implements AlertObserver {
     private final IEmergencyMediator mediator;
 

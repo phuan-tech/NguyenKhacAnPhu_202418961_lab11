@@ -1,3 +1,4 @@
+// Nguyễn Khắc An Phú 202418961
 public final class SmokeSensorAdapter implements Sensor {
     private final LegacySmokeDetecter legacy;
     

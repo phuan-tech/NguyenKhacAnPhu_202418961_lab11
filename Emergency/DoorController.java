@@ -1,6 +1,8 @@
+// Nguyễn Khắc An Phú 202418961
 public class DoorController {
     private boolean isOpen = false;
 
+    // Mở lối thoát hiểm
     public void openEmergencyExit() {
         if (isOpen) return;
 
@@ -8,6 +10,7 @@ public class DoorController {
         System.out.println("[DOOR] Emergency exit opened successfully.");
     }
 
+    // Đóng cửa 
     public void closeDoor() {
         if (!isOpen) return;
 

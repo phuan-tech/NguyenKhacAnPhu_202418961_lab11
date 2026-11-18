@@ -1,3 +1,4 @@
+// Nguyễn Khắc An Phú 202418961
 public class DashboardObserver implements AlertObserver {
     public void update(AlertEvent alertEvent) {
         if (alertEvent == null) {

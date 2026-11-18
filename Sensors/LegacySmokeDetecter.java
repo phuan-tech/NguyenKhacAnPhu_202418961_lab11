@@ -1,3 +1,4 @@
+// Nguyễn Khắc An Phú 202418961
 public final class LegacySmokeDetecter {
     private int smokeLevel;
     public LegacySmokeDetecter(int smokeLevel) {

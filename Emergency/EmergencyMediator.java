@@ -1,3 +1,4 @@
+// Nguyễn Khắc An Phú 202418961
 public class EmergencyMediator implements IEmergencyMediator {
     private final Alarm alarm;
     private final DoorController doorController;
@@ -10,6 +11,24 @@ public class EmergencyMediator implements IEmergencyMediator {
     }
 
     public void handleEmergency(AlertEvent alertEvent) {
-        
+        if (alertEvent.severity().equals("WARNING")) {
+            alarm.activate();
+        } else if (alertEvent.severity().equals("CRITICAL")) {
+            alarm.activate();
+            doorController.openEmergencyExit();
+            ventilationController.start();
+        }
+    }
+
+    public Alarm getAlarm() {
+        return alarm;
+    }
+
+    public DoorController getDoorController() {
+        return doorController;
+    }
+
+    public VentilationController getVentilationController() {
+        return ventilationController;
     }
 }
