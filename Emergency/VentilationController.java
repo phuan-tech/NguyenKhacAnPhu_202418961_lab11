@@ -1,4 +1,6 @@
 // Nguyễn Khắc An Phú 202418961
+package Emergency;
+
 public class VentilationController {
     private boolean isRunning = false;
 
@@ -20,7 +22,11 @@ public class VentilationController {
             return;
         }
 
-        isRunning = true;
+        isRunning = false;
         System.out.println("[VENTILATION] Ventilation system stopped.");
+    }
+
+    public boolean isRunning() {
+        return isRunning;
     }
 }

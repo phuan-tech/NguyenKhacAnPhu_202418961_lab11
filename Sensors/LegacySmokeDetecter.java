@@ -1,4 +1,6 @@
 // Nguyễn Khắc An Phú 202418961
+package Sensors;
+
 public final class LegacySmokeDetecter {
     private int smokeLevel;
     public LegacySmokeDetecter(int smokeLevel) {
@@ -20,3 +22,4 @@ public final class LegacySmokeDetecter {
         smokeLevel = Math.clamp(value, 0, 1000);
     }
 }
+

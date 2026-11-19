@@ -1,4 +1,6 @@
 // Nguyễn Khắc An Phú 202418961
+package Emergency;
+
 public class DoorController {
     private boolean isOpen = false;
 
@@ -16,5 +18,9 @@ public class DoorController {
 
         isOpen = false;
         System.out.println("[DOOR] Emergency exit closed.");
+    }
+
+    public boolean isOpen() {
+        return isOpen;
     }
 }

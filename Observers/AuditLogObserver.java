@@ -1,4 +1,7 @@
 // Nguyễn Khắc An Phú 202418961
+package Observers;
+
+import Models.AlertEvent;
 import java.util.List;
 import java.util.ArrayList;
 

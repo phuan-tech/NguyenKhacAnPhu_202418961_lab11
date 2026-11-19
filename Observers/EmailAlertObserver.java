@@ -1,5 +1,9 @@
 // Nguyễn Khắc An Phú 202418961
-public class EmailAlertObserver implements  AlertObserver {
+package Observers;
+
+import Models.AlertEvent;
+
+public class EmailAlertObserver implements AlertObserver {
     public void update(AlertEvent alertEvent) {
         if (alertEvent == null) {
             throw new IllegalArgumentException("Sự kiện cảnh báo không được null");

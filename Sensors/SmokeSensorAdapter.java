@@ -1,7 +1,9 @@
 // Nguyễn Khắc An Phú 202418961
+package Sensors;
+
 public final class SmokeSensorAdapter implements Sensor {
     private final LegacySmokeDetecter legacy;
-    
+
     public SmokeSensorAdapter(LegacySmokeDetecter legacy) {
         if (legacy == null) {
             throw new IllegalArgumentException("Thiết bị không được null");

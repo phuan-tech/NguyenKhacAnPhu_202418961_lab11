@@ -1,4 +1,9 @@
 // Nguyễn Khắc An Phú 202418961
+package Observers;
+
+import Models.AlertEvent;
+import Emergency.IEmergencyMediator;
+
 public class EmergencyBridgeObserver implements AlertObserver {
     private final IEmergencyMediator mediator;
 
@@ -8,6 +13,7 @@ public class EmergencyBridgeObserver implements AlertObserver {
         }
         this.mediator = mediator;
     }
+
     public void update(AlertEvent alertEvent) {
         if (alertEvent == null) {
             throw new IllegalArgumentException("Sự kiện cảnh báo không được null");

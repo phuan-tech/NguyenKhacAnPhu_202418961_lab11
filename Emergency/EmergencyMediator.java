@@ -1,4 +1,8 @@
 // Nguyễn Khắc An Phú 202418961
+package Emergency;
+
+import Models.AlertEvent;
+
 public class EmergencyMediator implements IEmergencyMediator {
     private final Alarm alarm;
     private final DoorController doorController;
